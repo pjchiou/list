@@ -54,11 +54,12 @@ void search_node(record *r, const char *value)
 
 void output_list(record *r)
 {
+    printf("[");
     while(r){
         printf("%s->",r->value);
         r = r->next;
     }
-    printf("\n");
+    printf("]\n");
 }
 
 void free_list(record *r)
